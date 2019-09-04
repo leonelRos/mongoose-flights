@@ -1,0 +1,25 @@
+<%- include('../partials/header') %>
+	<form action="/flights" method="POST">
+		<label>Airlines
+			<select name="airline">
+				<option value="AA">American Airlines</option>
+				<option value="SW">SouthWest</option>
+				<option value="UA">United Airlines</option>
+			</select>
+		</label>
+		<br>
+		<label>Flight number:
+			<input type="text" name="flightNo">
+		</label>
+		<br>
+		<label for="departs">Select departure date:
+			<input type="datetime-local" id="departs" name="departDate" value="2019-08-15T19:30" min="2019-08-15T00:00" max="2020-08-15T00:00">
+		</label>
+		<br>
+		
+		
+		<input type="submit" value="Add Flight">
+	</form>
+</body>
+
+</html>
